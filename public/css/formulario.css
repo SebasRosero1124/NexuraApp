@@ -1,0 +1,253 @@
+.form__picture{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.picture img{
+    margin-left: -10rem;
+    margin-bottom: 10rem;
+   width: 40rem;
+}
+
+/* ==============Form============== */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.form__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem;
+}
+
+.form__content{
+  width: 50%;
+    margin: 2rem 2rem 1rem;
+}
+
+.form__content .inputs{
+    margin: 1.2rem;
+}
+
+.form__content .inputs label{
+    font-size: 1rem;
+    padding: 1rem 1rem 2rem;
+}
+
+.form__content .inputs .text__form{
+    border: 1px solid #000;
+    border-radius: 1rem;
+    width: 60%;
+    height: 2rem;
+    padding: 1rem 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.form__content .inputs .text__form:hover{
+    border: 2px solid var(--background-color);
+}
+
+.gen__content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.inputs .gen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.inputs .radio{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs select, option {
+    width: 60%;
+    height: 3rem;
+    margin-left: 7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.inputs .option{
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    width: auto;
+    padding: 1rem 1rem 1rem;
+    cursor: pointer;
+}
+
+.inputs select .option:hover{
+  background: #ff7777;
+}
+
+.inputs .descrip__content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.inputs textarea{
+    width: 60%;
+    margin-left: 3.4rem;
+}
+
+.email__confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.email__confirm input{
+    margin-bottom: 1rem;
+}
+
+.inputs .roles__content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.roles__items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.role input{
+    margin: 1rem;
+}
+
+.role{
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #fb6262;
+background: linear-gradient(90deg, rgb(255, 92, 84) 0%, rgb(228, 45, 13) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #fb6262;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.wrap button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #ff7777;
+  box-shadow: 0 0 60px rgb(241, 114, 100);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.wrap button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.wrap button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #fb6262;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.wrap button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+
+/* ======================== */

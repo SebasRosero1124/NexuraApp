@@ -1,0 +1,19 @@
+.form__picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  
+  .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .picture img{
+      margin-left: -10rem;
+      margin-bottom: 10rem;
+     width: 40rem;
+  }
+
